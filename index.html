@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartMunshi - Legal Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            background: white;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tab-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        .tab-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #667eea;
+            margin: 20px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h3 {
+            color: #555;
+            margin: 20px 0 10px 0;
+        }
+        
+        h4 {
+            color: #666;
+            margin: 15px 0 8px 0;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul, ol {
+            margin: 10px 0 15px 25px;
+        }
+        
+        li {
+            margin: 5px 0;
+            color: #555;
+        }
+        
+        .highlight {
+            background: #f0f4ff;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .last-updated {
+            text-align: right;
+            color: #999;
+            font-style: italic;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8rem; }
+            .tab-btn { font-size: 0.9rem; padding: 10px 15px; }
+            .tab-content { padding: 20px; }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📱 SmartMunshi</h1>
+        <p>Legal Documents - Terms & Conditions | Privacy Policy</p>
+    </div>
+    
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('terms')">📄 Terms & Conditions</button>
+            <button class="tab-btn" onclick="switchTab('privacy')">🔒 Privacy Policy</button>
+        </div>
+        
+        <!-- Terms and Conditions Tab -->
+        <div id="terms" class="tab-content active">
+            <h1 style="color: #667eea; margin-bottom: 20px;">Terms and Conditions</h1>
+            <p><strong>Last Updated:</strong> June 9, 2026</p>
+            
+            <h2>1. Introduction</h2>
+            <p>Welcome to SmartMunshi ("we," "our," or "us"). SmartMunshi is a personal accounting and business management application that helps users track customers, sales, products, and financial transactions.</p>
+            <p>By downloading, installing, or using SmartMunshi, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our application.</p>
+            
+            <h2>2. Definitions</h2>
+            <ul>
+                <li><strong>"App"</strong> refers to SmartMunshi mobile application</li>
+                <li><strong>"User," "You," "Your"</strong> refers to the individual using the App</li>
+                <li><strong>"Content"</strong> refers to all data entered by you, including customer information, sales records, product inventory, and financial transactions</li>
+                <li><strong>"Premium Features"</strong> refers to paid features including product management, sales tracking, inventory management, and ad-free experience</li>
+                <li><strong>"Cloud Services"</strong> refers to Firebase backend services for data synchronization and backup</li>
+            </ul>
+            
+            <h2>3. Account Registration</h2>
+            <h3>3.1 Account Creation</h3>
+            <p>To use SmartMunshi, you must create an account using:</p>
+            <ul>
+                <li>Email and password</li>
+                <li>Google Sign-In authentication</li>
+            </ul>
+            
+            <h3>3.2 Account Security</h3>
+            <ul>
+                <li>You are responsible for maintaining the confidentiality of your login credentials</li>
+                <li>You agree to notify us immediately of any unauthorized use of your account</li>
+                <li>You are responsible for all activities that occur under your account</li>
+            </ul>
+            
+            <h3>3.3 Account Eligibility</h3>
+            <ul>
+                <li>You must be at least 13 years old to use this App</li>
+                <li>You must provide accurate and complete registration information</li>
+                <li>You may not create multiple accounts for abusive purposes</li>
+            </ul>
+            
+            <h2>4. Data Storage and Privacy</h2>
+            <h3>4.1 Local Storage</h3>
+            <ul>
+                <li>Your data is primarily stored locally on your device using Hive database</li>
+                <li>You can access your data even without an internet connection</li>
+            </ul>
+            
+            <h3>4.2 Cloud Storage</h3>
+            <ul>
+                <li>When logged in, your data is synced to Firebase Cloud (Google Cloud Platform)</li>
+                <li>Cloud backup allows you to access your data across multiple devices</li>
+                <li>You can disable sync by logging out</li>
+            </ul>
+            
+            <h3>4.3 Data Ownership</h3>
+            <ul>
+                <li><strong>You retain full ownership of all your data</strong></li>
+                <li>We do not sell, rent, or share your data with third parties</li>
+                <li>You can export or delete your data at any time</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>💡 Important:</strong> You own your data completely. We only provide the tools to manage it.
+            </div>
+            
+            <h2>5. Premium Subscription</h2>
+            <h3>5.1 Free Features</h3>
+            <p>Free users can access:</p>
+            <ul>
+                <li>Customer management (basic)</li>
+                <li>Transaction tracking</li>
+                <li>Dashboard overview</li>
+            </ul>
+            
+            <h3>5.2 Premium Features</h3>
+            <p>Premium subscription unlocks:</p>
+            <ul>
+                <li>Product management (add/edit/delete products)</li>
+                <li>Sales tracking and invoices</li>
+                <li>Inventory management</li>
+                <li>Ad-free experience</li>
+                <li>Complete cloud backup and sync</li>
+                <li>Advanced reports and analytics</li>
+            </ul>
+            
+            <div class="card">
+                <h3>💰 Premium Plans</h3>
+                <ul>
+                    <li><strong>Monthly Plan:</strong> Rs. 299/month</li>
+                    <li><strong>Yearly Plan:</strong> Rs. 2,999/year (Save 17%)</li>
+                </ul>
+                <p><strong>Payment Methods:</strong> EasyPaisa, JazzCash, Bank Transfer</p>
+            </div>
+            
+            <h3>5.3 Payment Process</h3>
+            <ol>
+                <li>User initiates payment through provided instructions</li>
+                <li>Payment is sent to our verified EasyPaisa/JazzCash number</li>
+                <li>User emails payment screenshot to <strong>support@smartmunshi.com</strong></li>
+                <li>Premium activated within 24 hours after verification</li>
+            </ol>
+            
+            <h3>5.4 Refund Policy</h3>
+            <ul>
+                <li>No refunds for partial subscription periods</li>
+                <li>Refunds considered within 7 days of purchase if technical issues persist</li>
+                <li>Contact support within 7 days for refund requests</li>
+            </ul>
+            
+            <h2>6. User Conduct and Responsibilities</h2>
+            <h3>6.1 Acceptable Use</h3>
+            <p>You agree to use SmartMunshi only for:</p>
+            <ul>
+                <li>Legitimate business accounting</li>
+                <li>Personal financial tracking</li>
+                <li>Lawful business operations</li>
+            </ul>
+            
+            <h3>6.2 Prohibited Activities</h3>
+            <p>You may NOT use SmartMunshi for:</p>
+            <ul>
+                <li>Money laundering or illegal financial activities</li>
+                <li>Storing illegal content or data</li>
+                <li>Harassing or stalking other users</li>
+                <li>Reverse engineering the App</li>
+                <li>Uploading malicious code or viruses</li>
+            </ul>
+            
+            <h2>7. Disclaimer of Warranties</h2>
+            <ul>
+                <li>The App is provided "as is" without warranties</li>
+                <li>We do not guarantee error-free operation</li>
+                <li>SmartMunshi is a tool, not a certified accountant</li>
+                <li>You are responsible for financial decisions</li>
+            </ul>
+            
+            <h2>8. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+                <li><strong>Total liability</strong> shall not exceed the amount paid by you (maximum Rs. 2,999)</li>
+                <li>We are not liable for indirect, incidental, or consequential damages</li>
+                <li>We are not liable for lost profits, data loss, or business interruption</li>
+            </ul>
+            
+            <h2>9. Termination</h2>
+            <ul>
+                <li>You may stop using the App anytime</li>
+                <li>You may delete your account via Settings</li>
+                <li>We may suspend or terminate your account for violation of these Terms</li>
+                <li>No refunds for unused premium periods</li>
+            </ul>
+            
+            <h2>10. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of Pakistan. Jurisdiction: Lahore, Pakistan.</p>
+            
+            <h2>11. Contact Information</h2>
+            <div class="card">
+                <p><strong>Email:</strong> support@smartmunshi.com</p>
+                <p><strong>Response Time:</strong> Within 48 hours</p>
+                <p><strong>Support Hours:</strong> Monday-Friday, 9 AM - 6 PM (PKT)</p>
+            </div>
+            
+            <div class="last-updated">
+                <p>© 2026 SmartMunshi. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- Privacy Policy Tab -->
+        <div id="privacy" class="tab-content">
+            <h1 style="color: #667eea; margin-bottom: 20px;">Privacy Policy</h1>
+            <p><strong>Last Updated:</strong> June 9, 2026</p>
+            
+            <h2>1. Information We Collect</h2>
+            
+            <h3>1.1 Account Information</h3>
+            <ul>
+                <li>Name and email address</li>
+                <li>Login credentials (encrypted)</li>
+                <li>Google Sign-In profile data (optional)</li>
+            </ul>
+            
+            <h3>1.2 Business Data (Your Content)</h3>
+            <ul>
+                <li>Customer names, phone numbers, email addresses</li>
+                <li>Product names, prices, stock levels</li>
+                <li>Sales invoices and transaction records</li>
+                <li>Payment histories and pending balances</li>
+                <li>Business financial data</li>
+            </ul>
+            
+            <h3>1.3 Device Information</h3>
+            <ul>
+                <li>Device model and OS version</li>
+                <li>App version and usage statistics</li>
+                <li>Crash reports and diagnostics</li>
+            </ul>
+            
+            <div class="highlight">
+                <strong>🔒 Important:</strong> We do NOT store credit card or payment details. All payments are processed through EasyPaisa/JazzCash.
+            </div>
+            
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide accounting and business management features</li>
+                <li>To sync your data across devices</li>
+                <li>To improve app performance and features</li>
+                <li>To communicate important updates</li>
+                <li>To display ads (free users only)</li>
+                <li>To process premium subscriptions</li>
+            </ul>
+            
+            <h2>3. Data Storage</h2>
+            <table>
+                <tr>
+                    <th>Storage Type</th>
+                    <th>Location</th>
+                    <th>Encryption</th>
+                </tr>
+                <tr>
+                    <td>Local Storage</td>
+                    <td>Your Device (Hive Database)</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Cloud Storage</td>
+                    <td>Google Firebase (Firestore)</td>
+                    <td>Yes (in transit and at rest)</td>
+                </tr>
+            </table>
+            
+            <h2>4. Data Sharing</h2>
+            
+            <h3>4.1 We Do NOT Share With:</h3>
+            <ul>
+                <li>Third-party advertisers (except Google AdMob)</li>
+                <li>Marketing companies</li>
+                <li>Data brokers</li>
+                <li>Other users</li>
+            </ul>
+            
+            <h3>4.2 Limited Sharing For:</h3>
+            <ul>
+                <li>Legal compliance (court orders)</li>
+                <li>App functionality (Google services)</li>
+                <li>Payment verification (email screenshots)</li>
+            </ul>
+            
+            <h2>5. Third-Party Services</h2>
+            <div class="card">
+                <h3>Google Services</h3>
+                <ul>
+                    <li><strong>Firebase:</strong> Authentication, Cloud Storage, Analytics</li>
+                    <li><strong>AdMob:</strong> Advertising (free users only)</li>
+                </ul>
+                <p>These services are subject to Google's Privacy Policy and Terms.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Payment Processors</h3>
+                <ul>
+                    <li><strong>EasyPaisa</strong> (Telenor Microfinance Bank)</li>
+                    <li><strong>JazzCash</strong> (Mobilink Microfinance Bank)</li>
+                </ul>
+                <p>Subject to their respective privacy policies.</p>
+            </div>
+            
+            <h2>6. Data Retention</h2>
+            <ul>
+                <li>Your data is retained until you delete your account</li>
+                <li>Cloud backups retained for 30 days after deletion</li>
+                <li>You can export your data anytime</li>
+            </ul>
+            
+            <h2>7. Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access your data</li>
+                <li>Export your data</li>
+                <li>Correct inaccurate data</li>
+                <li>Delete your data</li>
+                <li>Opt out of ads (via premium)</li>
+                <li>Withdraw consent</li>
+            </ul>
+            
+            <h2>8. Children's Privacy</h2>
+            <ul>
+                <li>App is not intended for children under 13</li>
+                <li>We do not knowingly collect data from children</li>
+                <li>Parental consent required for minors</li>
+            </ul>
+            
+            <h2>9. Security Measures</h2>
+            <ul>
+                <li>Encryption for data in transit (HTTPS/TLS)</li>
+                <li>Encryption for data at rest (Firebase)</li>
+                <li>Secure authentication (Firebase Auth)</li>
+                <li>Regular security updates</li>
+            </ul>
+            
+            <h2>10. International Data Transfer</h2>
+            <p>Data may be stored on Google Cloud servers (multiple regions). By using the App, you consent to this transfer.</p>
+            
+            <h2>11. Changes to Privacy Policy</h2>
+            <ul>
+                <li>We may update this Privacy Policy at any time</li>
+                <li>Material changes will be notified via App notification</li>
+                <li>Continued use constitutes acceptance</li>
+            </ul>
+            
+            <h2>12. Contact Us</h2>
+            <div class="card">
+                <p><strong>For privacy concerns or data requests:</strong></p>
+                <p><strong>Email:</strong> support@smartmunshi.com</p>
+                <p><strong>Subject:</strong> Privacy Concern or Data Request</p>
+            </div>
+            
+            <div class="last-updated">
+                <p>© 2026 SmartMunshi. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>SmartMunshi - Smart Accounting for Smart Business</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:support@smartmunshi.com" style="color: #667eea;">support@smartmunshi.com</a>
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.getElementById('terms').classList.remove('active');
+            document.getElementById('privacy').classList.remove('active');
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
